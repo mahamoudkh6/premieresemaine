@@ -1,0 +1,35 @@
+html {
+  font-size: 1em;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.6em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+.container {
+  display: table;
+  padding: 0 5%;
+  font-size: 1.05em;
+}
+
+.container > * {
+  display: table-cell;
+}
+
+section {
+  width: 60%;
+  padding-right: 10%;
+}
+
+footer {
+  padding-top: 20px;
+  text-align: center;
+}

@@ -1,0 +1,98 @@
+<!--
+	L'élément textarea permet d'intégrer un champ de saisie à plusieurs lignes dans un formulaire.
+	L'élément select représente un menu avec des options.
+	Deux type d'input permettent de créer une liste de choix :
+	_ checkbox : cases à cocher
+	_ radio: boutons radio
+-->
+
+<!--
+	1 - Reprenez le formulaire de l'exercice précédent.
+	2 - Ajoutez les champs suivants (avec les labels):
+		_ titre (sélection : M, Mme, Mlle).
+		_ type de téléphone (sélection : fixe, mobile).
+		_ commentaire (texte long à saisir).
+		_ centres d'intérêts (choix multiple possible).
+-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Titre</title>
+		<style>
+		
+		</style>
+	</head>
+	<body>
+		<form action="" type="POST">
+			<div>
+			<label for="prenom">Prénom</label>
+			<input type="text" id="prenom"/>
+			</div>	<br>
+			<div>
+			<label for="nom">Nom</label>
+			<input type="text" id="nom"/>
+			</div> <br>
+			<div>
+			<label for="voie">Voie</label>
+			<input type="text" id="voie"/>
+			</div> <br>
+			<div>
+			<label for="CP">CodePostal</label>
+			<input type="text" id="CP"/>
+		    </div> <br>
+		    <div>
+			<label for="ville">Ville</label>
+			<input type="text" id="ville"/>
+			</div> <br>
+			<div>	
+			<label for="téléphone">Téléphone</label>
+			<input type="text" id="téléphone"/>
+			</div> <br>
+			<div>	
+			<label for="email">email</label>
+			<input type="text" id="email"/>	
+			</div> <br>
+			<div>	
+			<label for="datedenaissance">Date de naissance</label>
+			<input type="date" id="datedenaissance"/>
+			</div>	<br>
+			<div>	
+			<label for="site web">Site Web</label>
+			<input type="text" id="site web"/>	
+			</div>	<br>
+			<div>	
+				<label for="titre">Titre</label>
+				<select name="titre" id="titre">
+					<option value="Mr">Mr</option>
+					<option value="Mlle" selected>Mlle</option>
+					<option value="Mme">Mme</option>
+				</select> <br> <br>
+			<div>
+				<label for="type de téléphone">type de téléphone</label>
+				<select name="type de téléphone" id="">type de téléphone
+				<option value="fixe">fixe</option>
+				<option value="telephone">telephone</option> </select>
+				<input type="tel" id="type de téléphone">
+			</div> <br><br><br>
+			<div>
+				<label for="commentaire">commentaire</label>
+				<textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
+			</div> <br> <br>
+			<div>
+				<label for="centre d'interet">centre d'interet</label> <br>
+				<input type="checkbox" name="foot" id="foot"> foot <br>
+				<input type="checkbox" name="basket" id="sport"> basket <br>
+				<input type="checkbox" name="cinema" id="cinema"> cinema <br>
+			</div>
+
+
+
+
+
+		<br> <br>	<input type="submit" value="Confirmer">
+		</form>
+	</body>
+</html>

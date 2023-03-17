@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-size: 0;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+div {
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+  width: 50%;
+}
+
+#element1 {
+  background-color: blueviolet;
+}
+
+#element2 {
+  background-color: maroon;
+}
+

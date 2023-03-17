@@ -1,0 +1,80 @@
+h1 {
+  position: relative;
+  top: 5px;
+  z-index: 2;
+}
+
+div {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+section {
+  height: 600px;
+  position: relative;
+}
+
+#element1 {
+  background-color: red;
+  position: absolute;
+  left: -50px;
+  bottom: 150px;
+}
+
+#element2 {
+  background-color: blue;
+  position: absolute;
+  right: -900px;
+  top: -480px;
+  width: 1000px;
+  height: 1200px;
+}
+
+#element2:hover {
+  background-color: red;
+}
+
+#element3 {
+  background-color: teal;
+  position: fixed;
+  top: 0;
+  left: calc(50% - 50px);
+  z-index: 1;
+}
+
+#element4 {
+  background-color: chocolate;
+  border-radius: 0;
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -2;
+}
+
+#element5 {
+  background-color: mediumpurple;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: 30%;
+}
+
+#element5 div {
+  background-color: mediumturquoise;
+  position: absolute;
+  height: 40px;
+  top: -8px;
+  width: 40px;
+}
+
+#element5 div:first-child {
+  left: -2px;
+}
+
+#element5 div:last-child {
+  right: -2px;
+}

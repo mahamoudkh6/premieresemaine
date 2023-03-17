@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/***************************************
+*****************Header*****************
+***************************************/
+
+/******************h1******************/
+
+h1 {
+  background-image: url("https://picsum.photos/1200/300");
+  margin: 0;
+  padding: 50px 10px;
+  position: relative;
+}
+
+h1 span {
+  position: relative;
+  z-index: 2;
+}
+
+h1::after {
+  background-color: rgba(255,255,255,0.3);
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/******************nav******************/
+
+nav {
+  background-color: #fff;
+  left: -75%;
+  padding: 10px 10%;
+  position: fixed;
+  width: 60%;
+}
+
+nav:hover {
+  left: auto;
+}
+
+nav span {
+  font-size: 1.2rem;
+  position: absolute;
+  right: 1%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+@media screen and (min-width:700px) {
+  nav {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width:960px) {
+  nav {
+    box-sizing: border-box;
+    display: table;
+    padding: 10px 5%;
+    position: static;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav ul {
+    display: table-row;
+  }
+
+  nav li {
+    display: table-cell;
+    width: 25%;
+  }
+
+  nav span {
+    display: none;
+  }
+}
+
+/**************************************
+****************Section****************
+**************************************/
+section {
+  margin: 0 8%;
+}
+
+section h2 {
+  margin: 5px 0 2px;
+}
+
+section p {
+  font-size: 0.9rem;
+  margin: 2px 0;
+}
+
+@media screen and (min-width:700px) {
+  section p {
+    font-size: 1rem;
+    margin: 4px 0;
+  }
+}
+
+/**************************************
+*****************Aside*****************
+**************************************/
+
+aside {
+  margin: 0 8%;
+}
+
+aside p {
+  font-size: 0.9 rem;
+  margin: 2px 0;
+}
+
+@media screen and (min-width:700px) {
+  aside p {
+    font-size: 1rem;
+    margin: 4px 0;
+  }
+}
+
+/***************************************
+*****************Footer*****************
+***************************************/
+
+footer {
+  display: table;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  display: table-cell;
+  width: 50%;
+}

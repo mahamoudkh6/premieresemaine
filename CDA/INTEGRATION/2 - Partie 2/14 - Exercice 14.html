@@ -1,0 +1,54 @@
+<!--
+Il est possible de faire un lien vers un élément dans la même page que le lien. Il s'agit d'une ancre.
+
+Prenons l'élément suivant : 
+<span id="cible">un texte</span>.
+On peut le viser de la façon suivante :
+<a href="#cible">Vers la cible</a>.
+
+On peut aussi viser une ancre depuis une autre page :
+<a href="page.html#cible">Vers la cible dans une autre page</a>.
+-->
+
+<!--
+	1 - Créez un document contenant un h1 et trois h2.
+	2 - Chaque h2 est suivi de deux paragraphes contenants du texte. Il faut, au-moins, 1000 caractères par paragraphe (utilisez la barre d'état de Notepad++ indiquant la longueur de la sélection).
+	3 - Faites un lien dans le premier paragraphe du premier h2 visant le troisième h2 et un lien dans le second paragraphe du troisième h2 visant le h1.
+	4 - Créez un second document contenant deux span. Chaque span cible une ancre de ce document.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style> .rouge{color: red;} .bleue{color: blue;} .vert{color: greenyellow;}
+		
+	</style>
+</head>
+<body>
+	<h1>  bonjour pierre  </h1>
+	<h2 id="un">  bonsoir 1 </h2>
+	<p Notepad++="1000" > Lorem ipsum dolor sit amet consectetur <a href="#trois">aller sur h2</a> adipisicing elit. Tenetur, ducimus! </p>
+	<p Notepad++="1000">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ducimus!  </p>
+	<h2 id="deux">   matin 2</h2>
+	<p Notepad++="1000">  Lorem ipsum dolor sit amet consectetur <a href="#un">aller sur le 1er h2</a> adipisicing elit. Tenetur, ducimus!    </p>
+	<p Notepad++="1000" >   Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ducimus!   </p>
+	<h2 id="trois" >   le soir 3</h2>
+	<p Notepad++="1000">   Lorem ipsum dolor sit amet <a href="#deux">connectetur 2 </a>  adipisicing elit. Tenetur, ducimus!   </p>
+	<p Notepad++="1000">   Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ducimus!   </p>
+
+
+	<h1>  bonjour pierre  </h1>
+	<h2 id="un">  bonsoir 1 </h2>
+	<p Notepad++="1000" > Lorem ipsum dolor sit amet consectetur <span class="rouge" >aller sur deuxieme  h2</span>  adipisicing elit. Tenetur, ducimus! </p>
+	<p Notepad++="1000">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ducimus!  </p>
+	<h2 id="deux">   matin 2</h2>
+	<p Notepad++="1000">  Lorem ipsum dolor sit amet consectetur <span class="bleue">aller sur le 1er h2</span>  adipisicing elit. Tenetur, ducimus!    </p>
+	<p Notepad++="1000" >   Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ducimus!   </p>
+	<h2 id="trois" >   le soir 3</h2>
+	<p Notepad++="1000">   Lorem ipsum dolor sit amet <span class="vert">connectetur h2 </span> adipisicing elit. Tenetur, ducimus!   </p>
+	<p Notepad++="1000">   Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ducimus!   </p>
+</body>
+</html>

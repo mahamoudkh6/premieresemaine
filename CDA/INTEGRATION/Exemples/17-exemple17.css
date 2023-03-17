@@ -1,0 +1,33 @@
+body {
+  font-size: 1.8rem;
+}
+
+.animation1 {
+  animation-duration: 5s;
+  animation-name: slideFromLeft;
+}
+
+
+.animation2 {
+  animation-duration: 3s;
+  animation-name: slideFromLeft;
+  animation-iteration-count: 6;
+}
+
+.animation3 {
+  animation-duration: 2s;
+  animation-name: slideFromLeft;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes slideFromLeft {
+  from {
+    margin-left: 0;
+  }
+  
+  to {
+    margin-left: 150px;
+  }
+}

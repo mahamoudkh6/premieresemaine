@@ -1,0 +1,44 @@
+.container {
+  display: grid;
+  grid-template-areas: "a b c d";
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media all and (max-width:800px) {
+  .container {
+    grid-template-areas: "a a"
+    "c d";
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width:500px) {
+  .container {
+    grid-template-areas: "a" "b" "c" "d";
+    grid-template-columns: 1fr;
+  }
+}
+
+.container > div {
+  height: 200px;
+}
+
+#cible1 {
+  grid-area: a;
+  background-color: red;
+}
+
+#cible2 {
+  grid-area: b;
+  background-color: teal;
+}
+
+#cible3 {
+  grid-area: c;
+  background-color: blue;
+}
+
+#cible4 {
+  grid-area: d;
+  background-color: magenta;
+}

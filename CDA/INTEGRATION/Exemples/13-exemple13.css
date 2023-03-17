@@ -1,0 +1,23 @@
+.sprite {
+  background-image: url("runningcat.png");
+  background-repeat: no-repeat;
+  background-position: 0 -5px;
+  height: 260px;
+  width: 530px;
+}
+
+.action1:hover ~ .sprite {
+  background-position: 0 -260px;
+}
+
+.action2:hover ~ .sprite {
+  background-position: -530px -5px;
+}
+
+.action3:hover ~ .sprite {
+  background-position: -530px -260px;
+}
+
+.action4:hover ~ .sprite {
+  background-position: 0 -520px;
+}

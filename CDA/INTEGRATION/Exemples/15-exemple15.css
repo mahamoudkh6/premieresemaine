@@ -1,0 +1,34 @@
+body {
+ font-size: 1.5rem; 
+}
+
+li {
+  list-style-type: none;
+  position: relative;
+}
+
+li::before {
+  background-color: magenta;
+  border-radius: 50%;
+  bottom: 2px;
+  content: "";
+  display: block;
+  height: 6px;
+  left: -10px;
+  position: absolute;
+  width: 6px;
+}
+
+li:nth-child(even)::before {
+  background-color: teal;
+}
+
+li:hover::before {
+  background-color: blue;
+}
+
+li:nth-child(even):hover::before {
+  background-color: yellow;
+}
+
+

@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+}
+
+.container div {
+    flex: auto;
+    height: 200px;
+}
+
+#cible1 {
+  background-color: teal;
+  order: 2;
+}
+
+#cible2 {
+  background-color: magenta;
+}
+
+#cible3 {
+  background-color: yellow;
+  order: 1;
+}

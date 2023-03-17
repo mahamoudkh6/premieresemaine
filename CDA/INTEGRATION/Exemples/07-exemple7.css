@@ -1,0 +1,23 @@
+p,
+div {
+  font-size: 18px;
+  margin: 0;
+}
+
+p span:first-of-type{
+  float: left;
+  font-size: 72px;
+  color: green;
+  margin-right: 10px;
+  line-height: 67px;
+  margin-bottom: -12px;
+}
+
+p:nth-of-type(2) {
+  clear: both;
+}
+
+div {
+  float: left;
+  width: 50%;
+}
